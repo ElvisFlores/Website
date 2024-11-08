@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Navbar Styles */
+        .navbar {
+            background-color: #2a2a2a;
+            color: #fff;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar-brand {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #f9f9f9;
+            text-decoration: none;
+        }
+        .navbar-nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 15px;
+        }
+        .navbar-nav a {
+            color: #f9f9f9;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        .navbar-nav a:hover {
+            color: #9acdf1;
+        }
+
+        /* Shadow Box for Resume Content */
+        .shadowbox {
+            width: 21cm;
+            max-width: 90%;
+            margin: 30px auto;
+            padding: 40px;
+            border: 1px solid #ddd;
+            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+        }
+
+        img {
+            float: right;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            margin-top: -10px;
+            border: 3px solid #9acdf1;
+        }
+
+        /* Name and Contact Info */
+        #name {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #333;
+        }
+        #contact {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: -10px;
+        }
+
+        /* Section Headers */
+        h3 {
+            color: #2a2a2a;
+            border-bottom: 2px solid #9acdf1;
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+
+        /* Education & Skills Columns */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 15px;
+        }
+        .column {
+            width: 48%;
+            padding: 10px 0;
+        }
+
+        /* Skills List Styling */
+        ul {
+            padding: 0;
+            list-style-type: none;
+            margin: 0;
+        }
+        ul li {
+            margin-bottom: 5px;
+        }
+        ul ul {
+            margin-left: 20px;
+        }
+        ul ul li {
+            font-size: 0.95em;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2a2a2a;
+            color: #f9f9f9;
+            padding: 15px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+   <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="highlighted">Resume</span>
+            </a>
+            <ul class="navbar-nav">
+                     <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="gates.html" target="_blank">Projects</a></li>
+                <li><a href="team.html">Dev Team</a></li>
+                <li><a href="concepts.html" target="_blank">Concepts</a></li>
+                <li><a href="databases.html" target="_blank">Databases</a></li>
+                <li><a href="doc.html" target="_blank">Documentations</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Resume Content in Shadow Box -->
+    <div class="shadowbox">
+        <img src="me.jpg" alt="me">
+        <p id="name">Elvis Flores</p>
+        <p id="contact">
+            92 lomas del Reodo<br>
+            Benque Viejo Del Carmel Town, Belize<br>
+            +501 6545969<br>
+            elvisflores956@gmail.com
+        </p>
+
+        <h3 id="objective">OBJECTIVE</h3>
+        <p>To acquire valuable knowledge and skills to complement those that I have learned from school in an actual job environment. In return, I offer my service and determination to be an asset to your company throughout the duration of my employment.</p>
+
+        <h3 id="education">EDUCATION</h3>
+        <div class="row">
+            <div class="column">
+                <p><strong>2024 - Present</strong><br>University of Belize</p>
+                <p><strong>2020 - 2024</strong><br>Scared Heart High School</p>
+                <p><strong>2010 - 2019</strong><br>Your R.C. School</p>
+            </div>
+            <div class="column">
+                <p><strong>Major:</strong> Information Technology</p>
+                <p><strong>Concentration:</strong> Science</p>
+            </div>
+        </div>
+
+        <h3 id="experience">PRACTICAL EXPERIENCE</h3>
+        <p>September 20 - Nov 6, Fundmimetal of computing. Final Project on presonal Website.</p>
+
+        <h3 id="skills">SKILLS</h3>
+        <ul>
+            <li>Web Development:
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>GitHub</li>
+                    
+                </ul>
+            </li>
+            <li>Programming:
+                <ul>
+                    <li>C++</li>
+                    <li>JavaScript</li>
+                    
+                </ul>
+            </li>
+        </ul>
+
+        <h3 id="reference">REFERENCE</h3>
+        <p>Elvis Flores, - 654-5969<br>
+        Dr. Kieran Ryan, University of Belize - 610-6666<br>
+            </p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 ElvisFLores. All rights reserved.
+    </footer>
+</body>
+</html>

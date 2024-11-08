@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentals of Computing</title>
+    <link rel="icon" href="ub.png" type="image/x-icon">
+<title>Elvis' Resume. </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentals of Computing</title>
+    
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            color: #555;
+            background-color: #f4f4f9;
+            margin: 0;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #333;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            text-decoration: none;
+            color: #f4f4f9;
+        }
+
+        .navbar-nav {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+        }
+
+        .navbar-nav a {
+            color: #f4f4f9;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            padding: 5px 10px;
+        }
+
+        .navbar-nav a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('background.jpeg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: #fff;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 0, 0.8);
+            color: #222;
+            padding: 10px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        /* General Container */
+        .container {
+            padding: 60px 80px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Logic Gate Simulator */
+        .logic-gate {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .logic-gate button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        .logic-gate button:hover {
+            background-color: #555;
+        }
+
+        .result {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+            color: #111;
+        }
+
+        /* Team Section */
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .team-member {
+            text-align: center;
+            max-width: 220px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member img {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .team-member h3 {
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .team-member p {
+            color: #777;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #f4f4f9;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar-nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero {
+                height: 80vh;
+            }
+
+            .container {
+                padding: 40px 20px;
+            }
+
+            .team {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                Fundamentals of Computing
+            </a>
+            <ul class="navbar-nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="gates.html" target="_blank">Projects</a></li>
+                <li><a href="team.html">Dev Team</a></li>
+                <li><a href="concepts.html" target="_blank">Concepts</a></li>
+                <li><a href="databases.html" target="_blank">Databases</a></li>
+                <li><a href="doc.html" target="_blank">Documentations</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div>
+            <h1>Fundamentals of Computing</h1>
+            <p>Explore the basics of computing with interactive simulations and engaging content.</p>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2>About the Course</h2>
+		<style>
+p {text-align: center;}
+</style>
+        <p>This introductory course in Computer Science lays the groundwork for students' future studies in the field. It offers a broad overview of essential topics, helping students to understand how computer systems operate. Key subjects include computer architecture, operating systems, networks, software development, data organization and visualization, as well as the potential applications of computing technology.</p>
+    </section>
+
+    <section id="logic" class="container">
+        <h2>Logic Gate Simulator</h2>
+        <div class="logic-gate">
+            <button onclick="toggleInputOne()">Toggle Input 1</button>
+            <button onclick="toggleInputTwo()">Toggle Input 2</button>
+        </div>
+        <div class="result" id="andResult">AND Result: OFF</div>
+    </section>
+
+    <section id="team" class="container">
+        <h2>Meet The Developer.</h2>
+        <div class="team">
+            <div class="team-member">
+                <img src="member1.jpg" alt="Member 1">
+                <h3>Elvis Flores</h3>
+                <p>Role: Developer</p>
+            </div>
+            
+            <!-- Add more team members here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Fundamentals of Computing. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let isInputOneOn = false;
+        let isInputTwoOn = false;
+
+        function toggleInputOne() {
+            isInputOneOn = !isInputOneOn;
+            updateAndResult();
+        }
+
+        function toggleInputTwo() {
+            isInputTwoOn = !isInputTwoOn;
+            updateAndResult();
+        }
+
+        function updateAndResult() {
+            const resultElement = document.getElementById('andResult');
+            const result = isInputOneOn && isInputTwoOn ? 'ON' : 'OFF';
+            resultElement.textContent = `AND Result: ${result}`;
+            resultElement.style.color = result === 'ON' ? 'green' : 'red';
+        }
+    </script>
+</body>
+</html>
